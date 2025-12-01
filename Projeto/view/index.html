@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../img/logo_upf.png">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <title>GameFest 2025</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">GameFest 2025</a>
+                <button class="navbar-toggler btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cadastrar_evento.html">Eventos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fazer_inscricao.html">Inscrições</a></li>
+                        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="w-100 banner">
+            <div class="container text-center text-white">
+                <h1 class="display-4 fw-bold">GameFest 2025</h1>
+                <p class="lead">O maior evento de games e cultura geek da região!</p>
+            </div>
+        </section>
+
+        <div class="container mt-0 mb-4 pt-4">
+            <div class="input-group input-group-md mb-3">
+                <input class="form-control" type="search" placeholder="Pesquise por nome, descrição ou data do evento..." aria-label="Search" id="inputBuscaPrincipal">
+                <button class="btn btn-outline-neon-cyan" type="button">Buscar</button>
+            </div>
+            
+            <div class="d-flex justify-content-start align-items-center flex-wrap gap-2">
+                <span class="text-white me-2 fw-bold">Ordenar por:</span>
+                <button class="btn btn-outline-neon-cyan btn-sm" onclick="ordenarEventos('nome')">Nome</button>
+                <button class="btn btn-outline-neon-cyan btn-sm" onclick="ordenarEventos('data')">Data</button>
+            </div>
+        </div>
+        <div class="row w-100 d-flex justify-content-center pt-3 pb-3">
+            <h1 class="titulo text-center text-white">PRÓXIMOS EVENTOS</h1>
+        </div>
+
+        <section class="container container-eventos pt-4 pb-5">
+            <div id="lista-eventos" class="row g-4">
+                
+                <div class="col-12 col-md-6">
+                    <div class="card border-0 p-0 h-100">
+                        <div class="card-body">
+                             <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3>Encontro de Cosplayers</h3>
+                                <button class="btn-favorito" onclick="toggleFavorito(1)"><i class="far fa-heart"></i></button>
+                            </div>
+                            <img class="img-evento" src="../img/WCS2019_Meiji-Mura.webp" alt="Encontro de Cosplayers">
+                            <p>Mostre seu talento e paixão por personagens. Uma celebração da criatividade e da cultura pop japonesa.</p>
+                            <div class="d-flex justify-content-end mt-2">
+                                <a href="#" class="btn btn-outline-neon-cyan me-2">Detalhes</a>
+                                <a href="fazer_inscricao.html" class="btn btn-neon-pink">Inscrever-se</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card border-0 p-0 h-100">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3>Campeonato de LoL</h3>
+                                <button class="btn-favorito" onclick="toggleFavorito(2)"><i class="far fa-heart"></i></button>
+                            </div>
+                            <img class="img-evento" src="../img/paris-france-fans-watch-an-electronic-video-game-tournament-with-the-game-league-of-legends.webp" alt="Campeonato de LoL">
+                            <p>Dispute o troféu do GameFest nas arenas virtuais. Prepare sua equipe para batalhas épicas!</p>
+                            <div class="d-flex justify-content-end mt-2">
+                                <a href="#" class="btn btn-outline-neon-cyan me-2">Detalhes</a>
+                                <a href="fazer_inscricao.html" class="btn btn-neon-pink">Inscrever-se</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card border-0 p-0 h-100">
+                        <div class="card-body">
+                             <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3>Torneio de Valorant</h3>
+                                <button class="btn-favorito" onclick="toggleFavorito(3)"><i class="far fa-heart"></i></button>
+                            </div>
+                            <img class="img-evento" src="../img/04094f84ed7f476435f8eda702a7f21bc460c298-1920x1080.webp" alt="Torneio de Valorant">
+                            <p>Batalhas 5x5 eletrizantes. Mostre sua mira e estratégia no FPS do momento!</p>
+                            <div class="d-flex justify-content-end mt-2">
+                                <a href="#" class="btn btn-outline-neon-cyan me-2">Detalhes</a>
+                                <a href="fazer_inscricao.html" class="btn btn-neon-pink">Inscrever-se</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card border-0 p-0 h-100">
+                        <div class="card-body">
+                             <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3>Feira de Games e Tecnologia</h3>
+                                <button class="btn-favorito" onclick="toggleFavorito(4)"><i class="far fa-heart"></i></button>
+                            </div>
+                            <img class="img-evento" src="../img/Principais-eventos-de-games-1-1024x640-optimized.webp" alt="Feira de Games e Tecnologia">
+                            <p>Descubra as últimas novidades em hardware, jogos indie e periféricos. Experimente o futuro!</p>
+                            <div class="d-flex justify-content-end mt-2">
+                                <a href="#" class="btn btn-outline-neon-cyan me-2">Detalhes</a>
+                                <a href="fazer_inscricao.html" class="btn btn-neon-pink">Inscrever-se</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="card border-0 p-0 h-100">
+                        <div class="card-body">
+                             <div class="d-flex justify-content-between align-items-start mb-2">
+                                <h3>Workshop de Desenvolvimento de Jogos</h3>
+                                <button class="btn-favorito" onclick="toggleFavorito(5)"><i class="far fa-heart"></i></button>
+                            </div>
+                            <img class="img-evento" src="../img/image.webp" alt="Workshop de Desenvolvimento de Jogos">
+                            <p>Aprenda sobre design, programação e produção de jogos com especialistas da área. Perfeito para quem quer começar no mundo da criação!</p>
+                            <div class="d-flex justify-content-end mt-2">
+                                <a href="#" class="btn btn-outline-neon-cyan me-2">Detalhes</a>
+                                <a href="fazer_inscricao.html" class="btn btn-neon-pink">Inscrever-se</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        
+    </main>
+
+    <footer class="text-center">
+        <p class="mb-0">GameFest 2025 © Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../Js/index.js"></script>
+</body>
+</html>

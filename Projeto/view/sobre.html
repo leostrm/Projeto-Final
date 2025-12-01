@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre - GameFest 2025</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+    
+    <style>
+        
+        .sobre-card {
+            background: rgba(45, 96, 115, 0.15); 
+            border: 1px solid var(--azul);
+            border-radius: 16px;
+            padding: 40px;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 20px rgba(0, 168, 198, 0.1);
+        }
+
+        .icon-box {
+            font-size: 3rem;
+            color: var(--neon-cyan);
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .icon-box:hover {
+            transform: scale(1.1);
+            text-shadow: 0 0 15px var(--neon-cyan);
+        }
+
+        .tech-badge {
+            background-color: transparent;
+            border: 1px solid var(--neon-pink);
+            color: var(--neon-pink);
+            padding: 8px 15px;
+            border-radius: 50px;
+            margin: 5px;
+            display: inline-block;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .tech-badge:hover {
+            background-color: var(--neon-pink);
+            color: white;
+            box-shadow: 0 0 15px var(--neon-pink);
+        }
+        
+        .destaque-texto {
+            color: var(--neon-cyan);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">GameFest 2025</a>
+                <button class="navbar-toggler btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cadastrar_evento.html">Eventos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="fazer_inscricao.html">Inscrições</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="sobre.html">Sobre</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5 mb-5">
+        <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold text-white">Sobre o <span style="color: var(--neon-pink);">GameFest 2025</span></h1>
+            <p class="lead text-white-50">Conectando mundos, criando lendas.</p>
+        </div>
+
+        <div class="sobre-card mb-5">
+            <div class="row align-items-center">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <p class="lead mb-4">
+                        O <strong>GameFest 2025</strong> nasceu com o objetivo de reunir jogadores, criadores e entusiastas de todas as idades para celebrar o universo dos jogos eletrônicos e da cultura geek. 
+                    </p>
+                    <p class="text-white-50">
+                        O evento é um ponto de encontro para quem vive e respira games, promovendo competições, workshops, palestras e experiências imersivas voltadas à comunidade gamer. Acreditamos que os jogos são mais do que diversão: são uma forma de arte, aprendizado e conexão entre pessoas.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-center mb-5 g-4">
+            <div class="col-md-4">
+                <div class="p-3">
+                    <div class="icon-box"><i class="fas fa-trophy"></i></div>
+                    <h3 class="text-white">Competição</h3>
+                    <p class="text-white-50">Torneios de alto nível de LoL, Valorant e muito mais, desafiando os melhores da região.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3">
+                    <div class="icon-box"><i class="fas fa-users"></i></div>
+                    <h3 class="text-white">Comunidade</h3>
+                    <p class="text-white-50">Um espaço seguro e divertido para cosplayers, artistas e fãs se encontrarem.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="p-3">
+                    <div class="icon-box"><i class="fas fa-microchip"></i></div>
+                    <h3 class="text-white">Tecnologia</h3>
+                    <p class="text-white-50">Workshops e feiras apresentando o futuro do desenvolvimento de jogos e hardware.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sobre-card text-center">
+            <h4 class="text-white mb-3">Desenvolvimento do Projeto</h4>
+            <div class="d-flex justify-content-center flex-wrap">
+                <span class="tech-badge"><i class="fab fa-html5 me-1"></i> HTML5</span>
+                <span class="tech-badge"><i class="fab fa-css3-alt me-1"></i> CSS3</span>
+                <span class="tech-badge"><i class="fab fa-js me-1"></i> JavaScript</span>
+                <span class="tech-badge"><i class="fab fa-bootstrap me-1"></i> Bootstrap 5</span>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="index.html" class="btn btn-outline-neon-cyan px-4 py-2">Voltar à Página Inicial</a>
+        </div>
+    </main>
+
+    <footer class="text-center py-4 border-top border-dark">
+        <p class="mb-0 text-white-50">GameFest 2025 © Todos os direitos reservados</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
